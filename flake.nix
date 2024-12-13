@@ -74,6 +74,9 @@
         port = "3000";
       };
 
+      # Cachix
+      cachix = true;
+
       # Enforce defaults
       system = "x86_64-linux";
       kernel = "zen";
