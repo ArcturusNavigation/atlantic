@@ -41,7 +41,6 @@
       flake = "/home/${user}/gh/arcturus/nixos";
 
       # Import hardware scan (device-specific)
-      # TODO: get hardware data
       hardware = import ./hardware-configuration.nix;
       hyprland.monitors = [ ];
 
@@ -68,6 +67,12 @@
         pkgs: with pkgs; [
           hello-wayland
         ];
+
+      # Hydra
+      hydra = {
+        enabled = true;
+        port = "3000";
+      };
 
       # Enforce defaults
       system = "x86_64-linux";
