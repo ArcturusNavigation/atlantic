@@ -76,6 +76,7 @@
 
       # Cachix
       cachix = true;
+      cache = "arcturus-nix";
 
       # Enforce defaults
       system = "x86_64-linux";
